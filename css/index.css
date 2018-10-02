@@ -3,18 +3,77 @@ body{
     display: grid;
 }
 
+/*APLICACION A TODOS LOS DIV*/
 div{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*VIDEO*/
 .gridMainVideo{
+    
     z-index: -1;
     position: fixed;
+    height: 100%;
+    width: 100%;
     min-width: 100%;
     min-height: 100%;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);    
+    transform: translateX(-50%) translateY(-50%);
 }
+
+/*TONO AZUL ENCIMA DE VIDEO*/
+.colorBackground{
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #303952;    
+    opacity: .55;
+}
+
+/*GRID MAIN*/
+main{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 
+        [col-1-start col-1-end]1fr;
+    grid-template-rows: 
+        [row-1-start]1fr 
+        [row-1-end row-2-start]1fr 
+        [row-2-end row-3-start]1fr 
+        [row-3-end row-4-start]1fr 
+        [row-4-end row-5-start]1fr 
+        [row-5-end row-6-start]1fr
+        [row-6-end row-7-start]1fr
+        [row-7-end row-8-start]1fr
+        [row-8-end row-9-start]1fr
+        [row-9-end row-10-start]1fr
+        [row-10-end row-11-start]1fr
+        [row-11-end row-12-start]1fr
+        [row-12-end row-13-start]1fr
+        [row-13-end row-14-start]1fr
+        [row-14-end row-15-start]1fr
+        [row-15-end row-16-start]1fr
+        [row-16-end row-17-start]1fr
+        [row-17-end];
+}
+
+/*MENU
+.menu{
+    grid-column: col-1-start / col-1-end;
+    grid-row: row-1-start / row-5-start;
+    background-color: aqua;
+
+}
+*/
+.menu{
+    grid-column: col-1-start / col-1-end;
+    grid-row: row-1-start / row-1-end;
+    background-color: aqua;
+}
+
