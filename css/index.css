@@ -39,9 +39,17 @@ div{
 /*GRID MAIN*/
 main{
     display: grid;
+    grid-gap: 3px 3px;
     height: 100vh;
     grid-template-columns: 
-        [col-1-start col-1-end]1fr;
+        [col-1-start]1fr
+        [col-1-end col-2-start]1fr
+        [col-2-end col-3-start]1fr
+        [col-3-end col-4-start]1fr
+        [col-4-end col-5-start]1fr
+        [col-5-end col-6-start]1fr
+        [col-6-end col-7-start]1fr
+        [col-7-end];
     grid-template-rows: 
         [row-1-start]1fr 
         [row-1-end row-2-start]1fr 
@@ -63,17 +71,34 @@ main{
         [row-17-end];
 }
 
-/*MENU
-.menu{
-    grid-column: col-1-start / col-1-end;
-    grid-row: row-1-start / row-5-start;
-    background-color: aqua;
-
-}
-*/
-.menu{
-    grid-column: col-1-start / col-1-end;
+/*MENU*/
+.inicio{
+    background-color: red;
+    grid-column: col-2-start / col-2-end;
     grid-row: row-1-start / row-1-end;
-    background-color: aqua;
+}
+
+.nosotros{
+    background-color: red;
+    grid-column: col-3-start / col-3-end;
+    grid-row: row-1-start / row-1-end;
+}
+
+.venderPropiedad{
+    background-color: red;
+    grid-column: col-4-start / col-4-end;
+    grid-row: row-1-start / row-1-end;
+}
+
+.comprarPropiedad{
+    background-color: red;
+    grid-column: col-5-start / col-5-end;
+    grid-row: row-1-start / row-1-end;
+}
+
+.contactanos{
+    background-color: red;
+    grid-column: col-6-start / col-6-end;
+    grid-row: row-1-start / row-1-end;
 }
 
