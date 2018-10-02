@@ -73,32 +73,37 @@ main{
 
 /*MENU*/
 .inicio{
-    background-color: red;
+    background-color: #003F75;
     grid-column: col-2-start / col-2-end;
     grid-row: row-1-start / row-1-end;
 }
 
 .nosotros{
-    background-color: red;
+    background-color: #003F75;
     grid-column: col-3-start / col-3-end;
     grid-row: row-1-start / row-1-end;
 }
 
 .venderPropiedad{
-    background-color: red;
+    background-color: #003F75;
     grid-column: col-4-start / col-4-end;
     grid-row: row-1-start / row-1-end;
 }
 
 .comprarPropiedad{
-    background-color: red;
+    background-color: #003F75;
     grid-column: col-5-start / col-5-end;
     grid-row: row-1-start / row-1-end;
 }
 
 .contactanos{
-    background-color: red;
+    background-color: #003F75;
     grid-column: col-6-start / col-6-end;
     grid-row: row-1-start / row-1-end;
 }
 
+/*ICONO CENTRAL*/
+.iconCenter{
+    grid-column: col-1-start /col-7-end;
+    grid-row: row-3-start / row-10-end;
+}
