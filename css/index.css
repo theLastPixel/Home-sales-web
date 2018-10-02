@@ -34,13 +34,13 @@ div{
     top: 0;
     left: 0;
     background: #003F75;    
-    opacity: .30;
+    opacity: .65;
 }
 
 /*GRID MAIN*/
 main{
     display: grid;
-    grid-gap: 1px;
+    grid-gap: 2px;
     height: 100vh;
     grid-template-columns: 
         [col-1-start]1fr
@@ -79,7 +79,7 @@ main{
     cursor: pointer;
     background-color: #003F75;
     color: white;
-    border: 4px solid #000000;
+    border: 2px solid #000000;
     border-radius: 4px;
     grid-column: col-2-start / col-2-end;
     grid-row: row-1-start / row-1-end;
@@ -99,7 +99,7 @@ main{
     cursor: pointer;
     background-color: #003F75;
     color: white;
-    border: 4px solid #000000;
+    border: 2px solid #000000;
     border-radius: 4px;
     grid-column: col-3-start / col-3-end;
     grid-row: row-1-start / row-1-end;
@@ -119,7 +119,7 @@ main{
     cursor: pointer;
     background-color: #003F75;
     color: white;
-    border: 4px solid #000000;
+    border: 2px solid #000000;
     border-radius: 4px;
     grid-column: col-4-start / col-4-end;
     grid-row: row-1-start / row-1-end;
@@ -139,7 +139,7 @@ main{
     cursor: pointer;
     background-color: #003F75;
     color: white;
-    border: 4px solid #000000;
+    border: 2px solid #000000;
     border-radius: 4px;
     grid-column: col-5-start / col-5-end;
     grid-row: row-1-start / row-1-end;
@@ -159,7 +159,7 @@ main{
     cursor: pointer;
     background-color: #003F75;
     color: white;
-    border: 4px solid #000000;
+    border: 2px solid #000000;
     border-radius: 4px;
     grid-column: col-6-start / col-6-end;
     grid-row: row-1-start / row-1-end;
@@ -175,9 +175,15 @@ main{
 
 
 /*ICONO CENTRAL*/
-.iconCenter{
-    grid-column: col-1-start /col-7-end;
-    grid-row: row-4-start / row-9-end;
+
+.divIconCenter{
+    background-size: cover;
+    grid-column: col-3-start /col-5-end;
+    grid-row: row-2-start / row-7-end;
+}
+.imgIconCenter{
+    height: auto;
+    max-width: 100%;
 }
 
 /*BOTON BUCAR*/
@@ -188,14 +194,50 @@ main{
     background-color: white; 
     color: black; 
     border: 4px solid #003F75;
-    border-radius: 4px;
+    border-radius: 50px;
     grid-column: col-4-start /col-4-end;
-    grid-row: row-10-start / row-10-end;
+    grid-row: row-8-start / row-7-end;
 }
 
 .btnBusqueda:hover {
     background-color: #003F75;
     color: white;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border-radius: 50px;
+    border-radius: 4px;
+}
+
+/*CONTENEDOR DE MAPA*/
+.div-container-maps{
+    background-size: cover;
+    grid-column: col-1-start / col-2-end;
+    grid-row: row-12-start / row-17-end;
+}
+.img-container-maps{
+    height: auto;
+    max-width: 60%;
+}
+
+
+/*CONTENEDOR DE OFERTAS*/
+.div-container-offers{
+    background-size: cover;
+    grid-column: col-2-end / col-5-end;
+    grid-row: row-12-start / row-17-end;
+}
+.img-container-offers{
+    height: auto;
+    max-width: 35%;
+}
+
+
+/*CONTENEDOR DEL BLOG*/
+.div-container-blog{
+    background-size: cover;
+    grid-column: col-6-start / col-7-end;
+    grid-row: row-12-start / row-17-end;
+}
+
+.img-container-blog{
+    height: auto;
+    max-width: 60%;
 }
