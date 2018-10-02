@@ -49,7 +49,7 @@ div{
 /*GRID MAIN*/
 main{
     display: grid;
-    grid-gap: 2px;
+    grid-gap: 15px;
     height: 100vh;
     grid-template-columns: 
         [col-1-start]1fr
@@ -84,8 +84,12 @@ main{
 
 
 
-/*MENU*/
-.inicio{
+/**************************ESTILOS MENU SUPERIOR/**************************/
+/*Estilos genericos*/
+.positionGRIDMenuSuperior{
+    grid-row: row-1-start / row-1-end;
+}
+.genericStyleMenuSuperior{
     -webkit-transition-duration: 1s; /* Safari */
     transition-duration: 0.5s;
     cursor: pointer;
@@ -93,110 +97,40 @@ main{
     color: white;
     border: 2px solid #000000;
     border-radius: 4px;
+}
+.genericStyleMenuSuperior:hover{
+    background-color: #ffffff;
+    color: #003F75;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border: 4px solid #003F75;
+    border-radius: 50px;
+}
+/*Estilos especificos*/
+
+
+.container-inicio{
+    
     grid-column: col-2-start / col-2-end;
-    grid-row: row-1-start / row-1-end;
 }
-.inicio:hover {
-    background-color: #ffffff;
-    color: #003F75;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border: 4px solid #003F75;
-    border-radius: 50px;
-}
-.nosotros{
-    -webkit-transition-duration: 1s; /* Safari */
-    transition-duration: 1s;
-    cursor: pointer;
-    background-color: #003F75;
-    color: white;
-    border: 2px solid #000000;
-    border-radius: 4px;
+.container-nosotros{
     grid-column: col-3-start / col-3-end;
-    grid-row: row-1-start / row-1-end;
 }
-.nosotros:hover {
-    background-color: #ffffff;
-    color: #003F75;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border: 4px solid #003F75;
-    border-radius: 50px;
-}
-.venderPropiedad{
-    -webkit-transition-duration: 1s; /* Safari */
-    transition-duration: 1s;
-    cursor: pointer;
-    background-color: #003F75;
-    color: white;
-    border: 2px solid #000000;
-    border-radius: 4px;
+.container-venderPropiedad{
     grid-column: col-4-start / col-4-end;
-    grid-row: row-1-start / row-1-end;
 }
-.venderPropiedad:hover {
-    background-color: #ffffff;
-    color: #003F75;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border: 4px solid #003F75;
-    border-radius: 50px;
-}
-.pendiente1{
-    -webkit-transition-duration: 1s; /* Safari */
-    transition-duration: 1s;
-    cursor: pointer;
-    background-color: #003F75;
-    color: white;
-    border: 2px solid #000000;
-    border-radius: 4px;
+.container-pendiente1{
     grid-column: col-5-start / col-5-end;
-    grid-row: row-1-start / row-1-end;
 }
-.pendiente1:hover {
-    background-color: #ffffff;
-    color: #003F75;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border: 4px solid #003F75;
-    border-radius: 50px;
-}
-.pendiente2{
-    -webkit-transition-duration: 1s; /* Safari */
-    transition-duration: 1s;
-    cursor: pointer;
-    background-color: #003F75;
-    color: white;
-    border: 2px solid #000000;
-    border-radius: 4px;
+.container-pendiente2{
     grid-column: col-6-start / col-6-end;
-    grid-row: row-1-start / row-1-end;
 }
-.pendiente2:hover {
-    background-color: #ffffff;
-    color: #003F75;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border: 4px solid #003F75;
-    border-radius: 50px;
-}
-.contactanos{
-    -webkit-transition-duration: 1s; /* Safari */
-    transition-duration: 1s;
-    cursor: pointer;
-    background-color: #003F75;
-    color: white;
-    border: 2px solid #000000;
-    border-radius: 4px;
+.container-contactanos{
     grid-column: col-7-start / col-7-end;
-    grid-row: row-1-start / row-1-end;
-}
-.contactanos:hover {
-    background-color: #ffffff;
-    color: #003F75;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border: 4px solid #003F75;
-    border-radius: 50px;
 }
 
 
-
-/*ICONO CENTRAL*/
+/**************************CONTENT CENTER/**************************/
+/*Icono central*/
 .divIconCenter{
     background-size: cover;
     grid-column: col-3-start /col-6-end;
@@ -206,10 +140,7 @@ main{
     height: auto;
     max-width: 70%;
 }
-
-
-
-/*BOTON BUCAR*/
+/*Boton central*/
 .btnBusqueda{
     margin: 0 50px 0 50px;
     -webkit-transition-duration: 1s; /* Safari */
@@ -230,109 +161,46 @@ main{
 }
 
 
+/**************************ESTILOS MENU INFERIOR/**************************/
+/*Estilos genericos*/
 
-/*CONTENEDOR DE MAPA*/
-.div-container-maps{
-    background-size: cover;
+.genericStyleMenuInferior{
+    border: 0px solid #000000;
+    filter: grayscale(100%);
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    height: auto;
+    max-width: 100%;
+}
+.genericStyleMenuInferior:hover{
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    border: 8px solid #000000;
+    border-radius: 50%;
+    filter: grayscale(0%);
+    height: auto;
+    max-width: 70%;
+}
+.positionGRIDMenuInferior{
+    grid-row: row-9-start / row-17-end;
+    -webkit-clip-path: inset(15% 0% 0% 0%);
+    clip-path: inset(17% 0% 0% 0%);
+}
+
+/*Estilos especificos*/
+.container-maps{
     grid-column: col-1-start / col-2-end;
-    grid-row: row-14-start / row-17-end;
-    
+    -webkit-clip-path: inset(15% 0% 0% 3%);
+    clip-path: inset(17% 0% 0% 3%);
 }
-.img-container-maps{
-    border: 2px solid #000000;
-    filter: grayscale(100%);
-    -webkit-transition-duration: 0.5s; /* Safari */
-    transition-duration: 0.5s;
-    height: auto;
-    max-width: 100%;
-}
-.img-container-maps:hover{
-    cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border: 4px solid #000000;
-    border-radius: 50%;
-    filter: grayscale(0%);
-    height: auto;
-    max-width: 100%;
-}
-
-
-
-/*CONTENEDOR DE OFERTAS*/
-.div-container-offers{
-    
-    background-size: cover;
+.container-offers{
     grid-column: col-3-start / col-4-end;
-    grid-row: row-14-start / row-17-end;
 }
-.img-container-offers{
-    
-    border: 2px solid #000000;
-    filter: grayscale(100%);
-    -webkit-transition-duration: 0.5s; /* Safari */
-    transition-duration: 0.5s;
-    height: auto;
-    max-width: 100%;
-}
-.img-container-offers:hover{
-    cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border: 4px solid #000000;
-    border-radius: 50%;
-    filter: grayscale(0%);
-    height: auto;
-    max-width: 100%;
-}
-
-
-
-/*CONTENEDOR DEL BLOG*/
-.div-container-blog{
-    background-size: cover;
+.container-blog{
     grid-column: col-5-start / col-6-end;
-    grid-row: row-14-start / row-17-end;
 }
-.img-container-blog{
-    border: 2px solid #000000;
-    filter: grayscale(100%);
-    -webkit-transition-duration: 0.5s; /* Safari */
-    transition-duration: 0.5s;
-    height: auto;
-    max-width: 100%;
-}
-.img-container-blog:hover{
-    cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border: 4px solid #000000;
-    border-radius: 50%;
-    filter: grayscale(0%);
-    height: auto;
-    max-width: 100%;
-}
-
-
-
-/*CASOS DE EXITO*/
-.div-container-succesful{
-    background-size: cover;
+.container-succesful{
     grid-column: col-7-start / col-8-end;
-    grid-row: row-14-start / row-17-end;
+    -webkit-clip-path: inset(17% 3% 0% 0%);
+    clip-path: inset(17% 3% 0% 0%);
 }
-.img-container-succesful{
-    border: 2px solid #000000;
-    filter: grayscale(100%);
-    -webkit-transition-duration: 0.5s; /* Safari */
-    transition-duration: 0.5s;
-    height: auto;
-    max-width: 100%;
-}
-.img-container-succesful:hover{
-    cursor: pointer;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-    border: 4px solid #000000;
-    border-radius: 50%;
-    filter: grayscale(0%);
-    height: auto;
-    max-width: 100%;
-}
-
