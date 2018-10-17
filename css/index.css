@@ -1,275 +1,42 @@
-
-/*BODY*/
 body{
     margin: 0;
     padding: 0;
 }
 
-/*GRID MAIN*/
 main{
     display: grid;
-    height: 100vh;
-    grid-template-columns: 
-        [col-0-start]1fr
-        [col-1-start col-1-end]1fr
-        [col-2-start col-2-end]1fr
-        [col-3-start col-3-end]1fr
-        [col-4-start col-4-end]1fr
-        [col-5-start col-5-end]1fr
-        [col-6-start col-6-end]1fr
-        [col-7-start col-7-end]1fr
-        [col-8-start col-8-end]1fr
-        [col-9-start col-9-end]1fr
-        [col-10-start col-10-end]1fr
-        [col-11-start col-11-end]1fr
-        [col-12-start col-12-end]1fr
-        [col-13-start col-13-end]1fr
-        [col-14-start col-14-end]1fr
-        [col-15-start col-15-end]1fr
-        [col-16-start col-16-end]1fr
-        [col-17-start col-17-end]1fr
-        [col-18-start col-18-end]1fr
-        [col-19-start col-19-end]1fr
-        [col-20-start col-20-end]1fr
-        [col-21-start col-21-end]1fr
-        [col-22-start col-22-end]1fr
-        [col-23-start col-23-end]1fr
-        [col-24-start col-24-end]1fr
-        [col-25-start col-25-end]1fr
-        [col-26-start col-26-end]1fr
-        [col-27-start col-27-end]1fr
-        [col-28-start col-28-end]1fr
-        [col-29-start col-29-end]1fr
-        [col-30-start col-30-end]1fr
-        [col-31-start col-31-end]1fr
-        [col-32-start col-32-end]1fr
-        [col-33-start col-33-end]1fr
-        [col-34-start col-34-end]1fr
-        [col-35-start col-35-end]1fr
-        [col-36-start col-36-end]1fr
-        [col-37-start col-37-end]1fr
-        [col-38-start col-38-end]1fr
-        [col-39-start col-39-end]1fr
-        [col-40-start col-40-end]1fr
-        [col-41-start col-41-end]1fr
-        [col-42-start col-42-end]1fr
-        [col-43-start col-43-end]1fr
-        [col-44-start col-44-end]1fr
-        [col-45-start col-45-end]1fr
-        [col-46-start col-46-end]1fr
-        [col-47-start col-47-end]1fr
-        [col-48-start col-48-end]1fr
-        [col-49-start col-49-end]1fr
-        [col-50-start col-50-end]1fr
-        [col-51-start col-51-end]1fr
-        [col-52-start col-52-end]1fr
-        [col-53-start col-53-end]1fr
-        [col-54-start col-54-end]1fr
-        [col-55-start col-55-end]1fr
-        [col-56-start col-56-end]1fr
-        [col-57-start col-57-end]1fr
-        [col-58-start col-58-end]1fr
-        [col-59-start col-59-end]1fr
-        [col-60-start col-60-end]1fr
-        [col-61-start col-61-end]1fr
-        [col-62-start col-62-end]1fr
-        [col-63-start col-63-end]1fr
-        [col-64-start col-64-end]1fr
-        [col-65-start col-65-end]1fr
-        [col-66-start col-66-end]1fr
-        [col-67-start col-67-end]1fr
-        [col-68-start col-68-end]1fr
-        [col-69-start col-69-end]1fr
-        [col-70-start col-70-end]1fr
-        [col-71-start col-71-end]1fr
-        [col-72-start col-72-end]1fr
-        [col-73-start col-73-end]1fr
-        [col-74-start col-74-end]1fr
-        [col-75-start col-75-end]1fr
-        [col-76-start col-76-end]1fr
-        [col-77-start col-77-end]1fr
-        [col-78-start col-78-end]1fr
-        [col-79-start col-79-end]1fr
-        [col-80-start col-80-end]1fr
-        [col-81-start col-81-end]1fr
-        [col-82-start col-82-end]1fr
-        [col-83-start col-83-end]1fr
-        [col-84-start col-84-end]1fr
-        [col-85-start col-85-end]1fr
-        [col-86-start col-86-end]1fr
-        [col-87-start col-87-end]1fr
-        [col-88-start col-88-end]1fr
-        [col-89-start col-89-end]1fr
-        [col-90-start col-90-end]1fr
-        [col-91-start col-91-end]1fr
-        [col-92-start col-92-end]1fr
-        [col-93-start col-93-end]1fr
-        [col-94-start col-94-end]1fr
-        [col-95-start col-95-end]1fr
-        [col-96-start col-96-end]1fr
-        [col-97-start col-97-end]1fr
-        [col-98-start col-98-end]1fr
-        [col-99-start col-99-end]1fr
-        [col-100-start col-100-end]1fr;
-    grid-template-rows: 
-        [row-0-start]auto
-        [row-1-start row-1-end]auto
-        [row-2-start row-2-end]auto
-        [row-3-start row-3-end]auto
-        [row-4-start row-4-end]auto
-        [row-5-start row-5-end]auto
-        [row-6-start row-6-end]auto
-        [row-7-start row-7-end]auto
-        [row-8-start row-8-end]auto
-        [row-9-start row-9-end]auto
-        [row-10-start row-10-end]auto
-        [row-11-start row-11-end]auto
-        [row-12-start row-12-end]auto
-        [row-13-start row-13-end]auto
-        [row-14-start row-14-end]auto
-        [row-15-start row-15-end]auto
-        [row-16-start row-16-end]auto
-        [row-17-start row-17-end]auto
-        [row-18-start row-18-end]auto
-        [row-19-start row-19-end]auto
-        [row-20-start row-20-end]auto
-        [row-21-start row-21-end]auto
-        [row-22-start row-22-end]auto
-        [row-23-start row-23-end]auto
-        [row-24-start row-24-end]auto
-        [row-25-start row-25-end]auto
-        [row-26-start row-26-end]auto
-        [row-27-start row-27-end]auto
-        [row-28-start row-28-end]auto
-        [row-29-start row-29-end]auto
-        [row-30-start row-30-end]auto
-        [row-31-start row-31-end]auto
-        [row-32-start row-32-end]auto
-        [row-33-start row-33-end]auto
-        [row-34-start row-34-end]auto
-        [row-35-start row-35-end]auto
-        [row-36-start row-36-end]auto
-        [row-37-start row-37-end]auto
-        [row-38-start row-38-end]auto
-        [row-39-start row-39-end]auto
-        [row-40-start row-40-end]auto
-        [row-41-start row-41-end]auto
-        [row-42-start row-42-end]auto
-        [row-43-start row-43-end]auto
-        [row-44-start row-44-end]auto
-        [row-45-start row-45-end]auto
-        [row-46-start row-46-end]auto
-        [row-47-start row-47-end]auto
-        [row-48-start row-48-end]auto
-        [row-49-start row-49-end]auto
-        [row-50-start row-50-end]auto
-        [row-51-start row-51-end]auto
-        [row-52-start row-52-end]auto
-        [row-53-start row-53-end]auto
-        [row-54-start row-54-end]auto
-        [row-55-start row-55-end]auto
-        [row-56-start row-56-end]auto
-        [row-57-start row-57-end]auto
-        [row-58-start row-58-end]auto
-        [row-59-start row-59-end]auto
-        [row-60-start row-60-end]auto
-        [row-61-start row-61-end]auto
-        [row-62-start row-62-end]auto
-        [row-63-start row-63-end]auto
-        [row-64-start row-64-end]auto
-        [row-65-start row-65-end]auto
-        [row-66-start row-66-end]auto
-        [row-67-start row-67-end]auto
-        [row-68-start row-68-end]auto
-        [row-69-start row-69-end]auto
-        [row-70-start row-70-end]auto
-        [row-71-start row-71-end]auto
-        [row-72-start row-72-end]auto
-        [row-73-start row-73-end]auto
-        [row-74-start row-74-end]auto
-        [row-75-start row-75-end]auto
-        [row-76-start row-76-end]auto
-        [row-77-start row-77-end]auto
-        [row-78-start row-78-end]auto
-        [row-79-start row-79-end]auto
-        [row-80-start row-80-end]auto
-        [row-81-start row-81-end]auto
-        [row-82-start row-82-end]auto
-        [row-83-start row-83-end]auto
-        [row-84-start row-84-end]auto
-        [row-85-start row-85-end]auto
-        [row-86-start row-86-end]auto
-        [row-87-start row-87-end]auto
-        [row-88-start row-88-end]auto
-        [row-89-start row-89-end]auto
-        [row-90-start row-90-end]auto
-        [row-91-start row-91-end]auto
-        [row-92-start row-92-end]auto
-        [row-93-start row-93-end]auto
-        [row-94-start row-94-end]auto
-        [row-95-start row-95-end]auto
-        [row-96-start row-96-end]auto
-        [row-97-start row-97-end]auto
-        [row-98-start row-98-end]auto
-        [row-99-start row-99-end]auto
-        [row-100-start row-100-end]auto;
+    grid-template:repeat(100,1fr)/repeat(100,1fr);
+    height: 1300px;
 }
 
-
-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.main-menu{
-    display: block;
-    grid-column: col-1-start / col-22-end;
-    grid-row: row-0-start / row-80-end;
-    background-color: red;
-}
-
-.menu-icon{
-    width: 70%;
-    height: auto;
-}
-
-.menu-options{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 15px 0px;
-}
-
-.menu-options > a{
-    background-color: aqua;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 3vw;
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-.content-bienvenido{
-    display: block;
+.box-menu{
+    grid-column: 1 / 35;
+    grid-row: 1 / 70;
+    background: slateblue;
     padding: 10px;
-    grid-column: col-75-start / col-95-end;
-    grid-row: row-2-start / row-20-end;
-    background: rgba(0,0,0,0.4);
-    text-align: justify;
+    color: white;
 }
 
-.content-bienvenido > h1 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2vw;
+.container-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px 0px;
+    height: 100%;
 }
 
-.content-bienvenido > p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 0.9vw;
+.opc-img{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    background: #cc4949;
 }
 
-.content-footer{
-    display: block;
-    grid-column: col-1-start / col-100-end;
-    grid-row: row-50-start / row-100-end;
-    background-color: black;
+.opc-text{
+    background: rgb(73, 204, 106);
+}
+
+.footer{
+    grid-column: 1/-1;
+    grid-row: 70/-1;
+    background: #000000;
 }
