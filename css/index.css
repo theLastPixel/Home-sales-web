@@ -1,3 +1,8 @@
+@font-face{
+    font-family: Luna;
+    src: url(/fonts/Luna.ttf);
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -6,15 +11,18 @@ body{
 main{
     display: grid;
     grid-template:repeat(100,1fr)/repeat(100,1fr);
-    height: 1500px;
+    height: 1800px;
 }
 
 .box-menu{
     grid-column: 1 / 35;
     grid-row: 1 / 65;
-    background: slateblue;
+    background: rgba(255, 255, 255, 0);
     padding: 10px;
-    color: white;
+    color: rgb(151, 45, 45);
+    padding: 0;
+    margin: 0;
+    height: 100vh;
 }
 
 .container-menu{
@@ -28,20 +36,35 @@ main{
 .opc-img{
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    background: #cc4949;
+    background: #49ccbb;
+}
+.opc-img > img{
+    height: auto;
+    width: 50%;
 }
 
 .opc-text{
-    background: rgb(73, 204, 106);
-}
-
-main * H1 {
-    color: white;
-    text-align: center;
+    background: rgb(152, 221, 61);
 }
 
 .footer{
     grid-column: 1/-1;
-    grid-row: 65/-1;
+    grid-row: 75/-1;
     background: #000000;
+}
+
+.opc-text> a{
+    font-family: "Luna";
+    font-size: 3vw;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+    
+}
+
+.opc-text> a:hover{
+    text-decoration: underline;
+    color: #51c983;
 }
