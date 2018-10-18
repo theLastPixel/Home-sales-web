@@ -1,19 +1,36 @@
+/* FONTS STYLE */
 @font-face{
     font-family: Luna;
     src: url(/fonts/Luna.ttf);
 }
 
+
+
+/*
+====================================================================================
+                               CONTENIDO PRINCIPAL                                 
+====================================================================================
+*/
+/* BODY */
 body{
     margin: 0;
     padding: 0;
 }
 
+/* MAIN */
 main{
     display: grid;
     grid-template:repeat(100,1fr)/repeat(100,1fr);
     height: 1800px;
 }
 
+/*
+====================================================================================
+                                    MENU LATERAL                   
+====================================================================================
+*/
+
+/* CONTENEDOR MENU TOTAL */
 .box-menu{
     grid-column: 1 / 35;
     grid-row: 1 / 65;
@@ -25,6 +42,7 @@ main{
     height: 100vh;
 }
 
+/* CONTENEDOR DENTRO DE MENU TOTAL */
 .container-menu{
     display: grid;
     grid-template-columns: 1fr;
@@ -33,26 +51,25 @@ main{
     height: 100%;
 }
 
+/* DIV PARA ICONO */
 .opc-img{
     grid-column: 1 / -1;
     grid-row: 1 / 2;
     background: #49ccbb;
 }
+
+/* ICONO */
 .opc-img > img{
     height: auto;
     width: 50%;
 }
 
+/* DIV OPCIONES MENU */
 .opc-text{
     background: rgb(152, 221, 61);
 }
 
-.footer{
-    grid-column: 1/-1;
-    grid-row: 75/-1;
-    background: #000000;
-}
-
+/* ESTILOS AL TEXTO DE LAS OPCIONES */
 .opc-text> a{
     font-family: "Luna";
     font-size: 3vw;
@@ -61,10 +78,23 @@ main{
     text-decoration: none;
     -webkit-transition-duration: 0.5s; /* Safari */
     transition-duration: 0.5s;
-    
-}
 
+}
+/* HOVER DE LAS ETIQUETAS a */
 .opc-text> a:hover{
     text-decoration: underline;
     color: #51c983;
+}
+
+
+/*
+====================================================================================
+                                        FOOTER                  
+====================================================================================
+*/
+/* DIV CONTENEDOR FOOTER */
+.footer{
+    grid-column: 1/-1;
+    grid-row: 75/-1;
+    background: #000000;
 }
