@@ -27,6 +27,7 @@
 body{
     margin: 0;
     padding: 0;
+    background: #000000;
 }
 
 /* MAIN */
@@ -104,6 +105,7 @@ main{
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 5fr 1fr;
     grid-gap: 10px;
+    font-family: "OpenSans";
 }
 
 
@@ -129,20 +131,48 @@ main{
     grid-row: 1/1;
     background: #2ba0a0;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 3fr 3fr;
     grid-template-rows: 2fr 2fr 1fr 4fr 2fr;
     grid-gap: 10px;
 }
 
+.footer-container-main-sub-start-subscribe > h1{
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    color: #000000;
+    text-decoration: none;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+
 /*SUSCRIBETE > INGRESA EMAIL*/
 .footer-container-main-sub-start-subscribe-enter-email{
-    grid-column: 1/1;
+    grid-column: 2/-1;
     grid-row: 4/5;
     background: #af5214;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
+}
+
+.footer-container-main-sub-start-subscribe-enter-email> input{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+    font-size: 2vw;
+}
+
+.footer-container-main-sub-start-subscribe-enter-email> button{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0;
+    padding: 0;
+    font-size: 2vw;
 }
 
 /*DIRECCION*/
@@ -156,16 +186,81 @@ main{
     grid-gap: 10px;
 }
 
+.footer-container-main-sub-start-direction> h1{
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    color: #000000;
+    text-decoration: none;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+
 /*DIRECCION > INFORMACION*/
 .footer-container-main-sub-start-direction-information{
     grid-column: 1/1;
     grid-row: 4/5;
     background: #af5214;
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 10fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px;
 }
+
+
+.footer-container-main-sub-start-direction-information .direccion-png{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: auto;
+    width: 65%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container-main-sub-start-direction-information .direccion-texto{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container-main-sub-start-direction-information .telefono-png{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: auto;
+    width: 65%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container-main-sub-start-direction-information .telefono-texto{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container-main-sub-start-direction-information .correo-png{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: auto;
+    width: 65%;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-container-main-sub-start-direction-information .correo-texto{
+    grid-column: 2/3;
+    grid-row: 3/4;
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0;
+}
+
 
 /*ACERCA DE*/
 .footer-container-main-sub-start-aboutUs{
@@ -178,6 +273,18 @@ main{
     grid-gap: 10px;
 }
 
+.footer-container-main-sub-start-aboutUs> h1{
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    color: #000000;
+    text-decoration: none;
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+
 /*ACERCA DE > PARRAFO*/
 .footer-container-main-sub-start-aboutUs-paragraph{
     grid-column: 1/1;
@@ -187,6 +294,15 @@ main{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 10px;
+}
+
+.footer-container-main-sub-start-aboutUs-paragraph > p {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    font-size: 0.8vw;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
 }
 
 
