@@ -1,8 +1,20 @@
-/* FONTS STYLE */
+/*
+====================================================================================
+                            ESTILOS INTEGRADOS LOCALES                                
+====================================================================================
+*/
+
+/* FONTS STYLE LUNA*/
 @font-face{
+    src: url(/fonts/Luna/Luna.ttf);
     font-family: Luna;
-    src: url(/fonts/Luna.ttf);
 }
+/* FONTS STYLE OpenSans*/
+@font-face{
+    src: url(/fonts/OpenSans/OpenSans-Regular.ttf);
+    font-family: OpenSans;
+}
+
 
 
 
@@ -21,7 +33,7 @@ body{
 main{
     display: grid;
     grid-template:repeat(100,1fr)/repeat(100,1fr);
-    height: 1800px;
+    height: 1650px;
 }
 
 /*
@@ -31,24 +43,15 @@ main{
 */
 
 /* CONTENEDOR MENU TOTAL */
-.box-menu{
+.menu-container-main{
     grid-column: 1 / 35;
-    grid-row: 1 / 65;
-    background: rgba(255, 255, 255, 0);
-    padding: 10px;
-    color: rgb(151, 45, 45);
-    padding: 0;
-    margin: 0;
+    grid-row: 1 / 70;
+    background: rgb(255, 0, 0);
     height: 100vh;
-}
-
-/* CONTENEDOR DENTRO DE MENU TOTAL */
-.container-menu{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px 0px;
-    height: 100%;
 }
 
 /* DIV PARA ICONO */
@@ -61,7 +64,7 @@ main{
 /* ICONO */
 .opc-img > img{
     height: auto;
-    width: 50%;
+    width: 40%;
 }
 
 /* DIV OPCIONES MENU */
@@ -92,9 +95,135 @@ main{
                                         FOOTER                  
 ====================================================================================
 */
-/* DIV CONTENEDOR FOOTER */
-.footer{
+/* FOOTER CONTENEDOR PRINCIPAL */
+.footer-container-main{
     grid-column: 1/-1;
-    grid-row: 75/-1;
+    grid-row: 70/-1;
     background: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-gap: 10px;
+}
+
+
+/*
+------------------------------------
+        CONTENEDOR DE ARRIBA                  
+------------------------------------
+*/
+/*FOOTER SUB CONTENEDOR ARRIBA*/
+.footer-container-main-sub-start{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background: #a02b8c;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+/*SUSCRIBETE*/
+.footer-container-main-sub-start-subscribe{
+    grid-column: 1/2;
+    grid-row: 1/1;
+    background: #2ba0a0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 1fr 4fr 2fr;
+    grid-gap: 10px;
+}
+
+/*SUSCRIBETE > INGRESA EMAIL*/
+.footer-container-main-sub-start-subscribe-enter-email{
+    grid-column: 1/1;
+    grid-row: 4/5;
+    background: #af5214;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*DIRECCION*/
+.footer-container-main-sub-start-direction{
+    grid-column: 2/3;
+    grid-row: 1/1;
+    background: #3d0597;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 1fr 4fr 2fr;
+    grid-gap: 10px;
+}
+
+/*DIRECCION > INFORMACION*/
+.footer-container-main-sub-start-direction-information{
+    grid-column: 1/1;
+    grid-row: 4/5;
+    background: #af5214;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*ACERCA DE*/
+.footer-container-main-sub-start-aboutUs{
+    grid-column: 3/4;
+    grid-row: 1/1;
+    background: #1b0386;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 1fr 4fr 2fr;
+    grid-gap: 10px;
+}
+
+/*ACERCA DE > PARRAFO*/
+.footer-container-main-sub-start-aboutUs-paragraph{
+    grid-column: 1/1;
+    grid-row: 4/5;
+    background: #af5214;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+
+/*
+------------------------------------
+        CONTENEDOR DE ABAJO                  
+------------------------------------
+*/
+/*FOOTER SUB CONTENEDOR ABAJO*/
+.footer-container-main-sub-end{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    background: #2b67a0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+/*DERECHOS RESERVADOS*/
+.footer-container-main-sub-end-reservation-straight{
+    grid-column: 1/3;
+    grid-row: 1/-1;
+    background: #25ca56;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+/*ICONOS REDES SOCIALES*/
+.footer-container-main-sub-end-icons-redes{
+    grid-column: 3/-1;
+    grid-row: 1/-1;
+    background: #cac725;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
 }
