@@ -1,47 +1,480 @@
+/*
+====================================================================================
+                            ESTILOS INTEGRADOS LOCALES                                
+====================================================================================
+*/
+
+/* FONTS STYLE LUNA*/
+@font-face{
+    src: url(/fonts/Luna/Luna.ttf);
+    font-family: Luna;
+}
+/* FONTS STYLE OpenSans*/
+@font-face{
+    src: url(/fonts/OpenSans/OpenSans-Regular.ttf);
+    font-family: OpenSans;
+}
+
+/*
+====================================================================================
+                               CONTENIDO PRINCIPAL                                 
+====================================================================================
+*/
+/* BODY */
 body{
     margin: 0;
     padding: 0;
+    background: #000000;
+    
 }
 
+/* MAIN */
 main{
     display: grid;
     grid-template:repeat(100,1fr)/repeat(100,1fr);
-    height: 1500px;
+    height: 1650px;
 }
 
-.box-menu{
+/* APLICACION A TODO EL CONTENIDO DEL MAIN */
+main *{
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+/*
+====================================================================================
+                                    MENU LATERAL                   
+====================================================================================
+*/
+
+/* CONTENEDOR MENU TOTAL */
+.menu-container-main{
     grid-column: 1 / 35;
-    grid-row: 1 / 65;
-    background: slateblue;
-    padding: 10px;
-    color: white;
-}
-
-.container-menu{
+    grid-row: 1 / 70;
+    background: rgb(255, 0, 0);
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 10px 0px;
-    height: 100%;
 }
 
+/* DIV PARA ICONO */
 .opc-img{
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    background: #cc4949;
+    background: #49ccbb;
 }
 
+/* ICONO */
+.opc-img > img{
+    height: auto;
+    width: 40%;
+}
+
+/* DIV OPCIONES MENU */
 .opc-text{
-    background: rgb(73, 204, 106);
+    background: rgb(152, 221, 61);
 }
 
-main * H1 {
-    color: white;
-    text-align: center;
+/* ESTILOS AL TEXTO DE LAS OPCIONES */
+.opc-text> a{
+    font-family: "Luna";
+    font-size: 3vw;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+
+}
+/* HOVER DE LAS ETIQUETAS a */
+.opc-text> a:hover{
+    text-decoration: underline;
+    color: #51c983;
 }
 
-.footer{
+
+/*
+====================================================================================
+                                        FOOTER                  
+====================================================================================
+*/
+/* FOOTER CONTENEDOR PRINCIPAL */
+.footer-container-main{
     grid-column: 1/-1;
-    grid-row: 65/-1;
+    grid-row: 70/-1;
     background: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-gap: 10px;
+    font-family: "OpenSans";
+}
+
+
+/*
+------------------------------------
+        CONTENEDOR DE ARRIBA                  
+------------------------------------
+*/
+/*FOOTER SUB CONTENEDOR ARRIBA*/
+.footer-container-main-sub-start{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background: #a02b8c;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+/*SUSCRIBETE*/
+.footer-container-main-sub-start-subscribe{
+    grid-column: 1/2;
+    grid-row: 1/1;
+    background: #2ba0a0;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-rows: 2fr 2fr 1fr 4fr 2fr;
+    grid-gap: 10px;
+    
+}
+
+/*TITULO DE SUSCRIBIRSE*/
+.footer-container-main-sub-start-subscribe > h1{
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*SUSCRIBETE > INGRESA EMAIL*/
+.footer-container-main-sub-start-subscribe-enter-email{
+    grid-column: 2/-1;
+    grid-row: 4/5;
+    background: #af5214;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*INPUT CORREO*/
+.footer-container-main-sub-start-subscribe-enter-email> input{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+    font-size: 2vw;
+}
+
+/*BOTON SUSCRIBIRSE*/
+.footer-container-main-sub-start-subscribe-enter-email> button{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0;
+    padding: 0;
+    font-size: 2vw;
+}
+
+/*DIRECCION*/
+.footer-container-main-sub-start-direction{
+    grid-column: 2/3;
+    grid-row: 1/1;
+    background: #3d0597;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 1fr 4fr 2fr;
+    grid-gap: 10px;
+    
+}
+
+/*TITULO DE DIRECCION*/
+.footer-container-main-sub-start-direction> h1{
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*DIRECCION CONTENEDOR INFORMACION*/
+.footer-container-main-sub-start-direction-information{
+    grid-column: 1/1;
+    grid-row: 4/5;
+    background: #af5214;
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*CONTENEDOR DE IMAGENES*/
+.footer-container-main-sub-start-direction-information-icon{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background: #5da9c0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+/*IMAGEN DIRECCION*/
+.footer-container-main-sub-start-direction-information .direccion-png{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: auto;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+/*IMAGEN TELEFONO*/
+.footer-container-main-sub-start-direction-information .telefono-png{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: auto;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+/*IMAGEN CORREO*/
+.footer-container-main-sub-start-direction-information .correo-png{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: auto;
+    width: 70%;
+    margin: 0;
+    padding: 0;;
+}
+
+/*CONTENEDOR DE TEXTOS*/
+ .footer-container-main-sub-start-direction-information .text{
+    grid-column: 2/3;
+    grid-row: 1/4;
+    background: #abc05d;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*TEXTO DIRECCION*/
+.footer-container-main-sub-start-direction-information .direccion-texto{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0;
+}
+
+/*TEXTO TELEFONO*/
+.footer-container-main-sub-start-direction-information .telefono-texto{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0;
+}
+/*TEXTO CORREO*/
+.footer-container-main-sub-start-direction-information .correo-texto{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0;
+} 
+
+
+/*ACERCA DE*/
+.footer-container-main-sub-start-aboutUs{
+    grid-column: 3/4;
+    grid-row: 1/1;
+    background: #1b0386;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 1fr 4fr 2fr;
+    grid-gap: 10px;
+}
+
+/*TITULO DE ACERCA DE NOSOTROS*/
+.footer-container-main-sub-start-aboutUs> h1{
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*CONTENEDOR ACERCA DE NOSOTROS PARRAFO*/
+.footer-container-main-sub-start-aboutUs-paragraph{
+    grid-column: 1/1;
+    grid-row: 4/5;
+    background: #af5214;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*PARRAFO DEL CONTAINER ACERDE DE NOSOTROS*/
+.footer-container-main-sub-start-aboutUs-paragraph > p {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    font-size: 0.8vw;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+------------------------------------
+        CONTENEDOR DE ABAJO                  
+------------------------------------
+*/
+/*FOOTER SUB CONTENEDOR ABAJO*/
+.footer-container-main-sub-end{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    background: #2b67a0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+/*DERECHOS RESERVADOS*/
+.footer-container-main-sub-end-reservation-straight{
+    grid-column: 1/4;
+    grid-row: 1/-1;
+    background: #25ca56;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    align-content: center;
+    align-items: center;
+}
+
+/*COPYRIGHT*/
+.footer-container-main-sub-end-reservation-straight > p{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    font-size: 2vw;
+    align-content: flex-start;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/*ICONOS REDES SOCIALES*/
+.footer-container-main-sub-end-icons-redes{
+    grid-column: 4/-1;
+    grid-row: 1/-1;
+    background: #cac725;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+/*ICONO GPS*/
+.footer-container-main-sub-end-icons-redes-gps{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+
+/*ICONO TWITTER*/
+.footer-container-main-sub-end-icons-redes-twitter{
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+
+/*ICONO FACEBOOK*/
+.footer-container-main-sub-end-icons-redes-facebook{
+    grid-column: 3/4;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+
+/*ICONO INSTAGRAM*/
+.footer-container-main-sub-end-icons-redes-instagram{
+    grid-column: 4/5;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+
+/*ICONO LINKEDIN*/
+.footer-container-main-sub-end-icons-redes-linkedin{
+    grid-column: 5/6;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+
+/*ICONO YOUTUBE*/
+.footer-container-main-sub-end-icons-redes-youtube{
+    grid-column: 6/7;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+
+/*ICONO MESSENGER*/
+.footer-container-main-sub-end-icons-redes-messenger{
+    grid-column: 7/8;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+
+/*ICONO SKYPE*/
+.footer-container-main-sub-end-icons-redes-skype{
+    grid-column: 8/9;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
+}
+
+/*ICONO WHATSAPP*/
+.footer-container-main-sub-end-icons-redes-whatsapp{
+    grid-column: 9/10;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: 100%;
 }
