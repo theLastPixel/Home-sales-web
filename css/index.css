@@ -25,7 +25,6 @@ body{
     margin: 0;
     padding: 0;
     background: #ffffff;
-    
 }
 
 /* MAIN */
@@ -55,7 +54,6 @@ main *{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 10px 0px;
 }
 
 /* DIV PARA ICONO */
@@ -69,6 +67,16 @@ main *{
 .opc-img > img{
     height: auto;
     width: 40%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* HOVER ICONO */
+.opc-img > img:hover{
+    height: auto;
+    width: 40%;
+    -webkit-filter: none;
+    filter: none;
 }
 
 /* DIV OPCIONES MENU */
@@ -348,7 +356,7 @@ main *{
 .footer-container-main-sub-end{
     grid-column: 1/-1;
     grid-row: 2/-1;
-    background: #222020;
+    background: #000000;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 2fr;
     grid-template-rows: 1fr;
