@@ -392,92 +392,164 @@ main *{
     justify-items: center;
 }
 
-/*ICONO GPS*/
-.footer-container-main-sub-end-icons-redes-gps{
+/*ICONO FACEBOK*/
+.footer-container-main-sub-end-icons-redes-facebook{
     grid-column: 1/2;
     grid-row: 1/-1;
     margin: 0;
     padding: 7px 0px 7px 0px;
     height: auto;
     width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
-/*ICONO TWITTER*/
-.footer-container-main-sub-end-icons-redes-twitter{
+/*HOVER ICONO FACEBOK*/
+.footer-container-main-sub-end-icons-redes-facebook:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO GOOGLE PLUS*/
+.footer-container-main-sub-end-icons-redes-Googleplus{
     grid-column: 2/3;
     grid-row: 1/-1;
     margin: 0;
     padding: 7px 0px 7px 0px;
     height: auto;
     width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
-/*ICONO FACEBOOK*/
-.footer-container-main-sub-end-icons-redes-facebook{
+/*HOVER ICONO GOOGLE PLUS*/
+.footer-container-main-sub-end-icons-redes-Googleplus:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO INSTRAGRAM*/
+.footer-container-main-sub-end-icons-redes-instagram{
     grid-column: 3/4;
     grid-row: 1/-1;
     margin: 0;
     padding: 7px 0px 7px 0px;
     height: auto;
     width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
-/*ICONO INSTAGRAM*/
-.footer-container-main-sub-end-icons-redes-instagram{
+/*HOVER ICONO INSTAGRAM*/
+.footer-container-main-sub-end-icons-redes-instagram:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO LINKEDIN*/
+.footer-container-main-sub-end-icons-redes-linkedin{
     grid-column: 4/5;
     grid-row: 1/-1;
     margin: 0;
     padding: 7px 0px 7px 0px;
     height: auto;
     width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
-/*ICONO LINKEDIN*/
-.footer-container-main-sub-end-icons-redes-linkedin{
+/*HOVER ICONO LINKEDIN*/
+.footer-container-main-sub-end-icons-redes-linkedin:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO PINTERIST*/
+.footer-container-main-sub-end-icons-redes-pinterest{
     grid-column: 5/6;
     grid-row: 1/-1;
     margin: 0;
     padding: 7px 0px 7px 0px;
     height: auto;
     width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
-/*ICONO YOUTUBE*/
-.footer-container-main-sub-end-icons-redes-youtube{
+/*HOVER ICONO PINTERIST*/
+.footer-container-main-sub-end-icons-redes-pinterest:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO ICONO SKYPE*/
+.footer-container-main-sub-end-icons-redes-skype{
     grid-column: 6/7;
     grid-row: 1/-1;
     margin: 0;
     padding: 7px 0px 7px 0px;
     height: auto;
     width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
-/*ICONO MESSENGER*/
-.footer-container-main-sub-end-icons-redes-messenger{
+/*HOVER ICONO SKYPE*/
+.footer-container-main-sub-end-icons-redes-skype:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO TWITTER*/
+.footer-container-main-sub-end-icons-redes-twitter{
     grid-column: 7/8;
     grid-row: 1/-1;
     margin: 0;
     padding: 7px 0px 7px 0px;
     height: auto;
     width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 
-/*ICONO SKYPE*/
-.footer-container-main-sub-end-icons-redes-skype{
+/*HOVER ICONO TWITTER*/
+.footer-container-main-sub-end-icons-redes-twitter:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO WHATSAPP*/
+.footer-container-main-sub-end-icons-redes-whatsapp{
     grid-column: 8/9;
     grid-row: 1/-1;
     margin: 0;
     padding: 7px 0px 7px 0px;
     height: auto;
     width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+/*HOVER ICONO WHATSAPP*/
+.footer-container-main-sub-end-icons-redes-whatsapp:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
 }
 
-/*ICONO WHATSAPP*/
-.footer-container-main-sub-end-icons-redes-whatsapp{
+/*ICONO YOUTUBE*/
+.footer-container-main-sub-end-icons-redes-youtube{
     grid-column: 9/10;
     grid-row: 1/-1;
     margin: 0;
     padding: 7px 0px 7px 0px;
     height: auto;
     width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    
+}
+
+/*HOVER ICONO YOUTUBE*/
+.footer-container-main-sub-end-icons-redes-youtube:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
 }
