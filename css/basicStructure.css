@@ -47,7 +47,7 @@ main *{
 
 /* CONTENEDOR MENU TOTAL */
 .menu-container-main{
-    grid-column: 1 / 35;
+    grid-column: 5 / 35;
     grid-row: 1 / 75;
     background: rgba(255, 255, 255, 0);
     height: 100vh;
