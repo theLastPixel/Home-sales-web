@@ -1,0 +1,563 @@
+/*
+====================================================================================
+                            ESTILOS INTEGRADOS LOCALES                                
+====================================================================================
+*/
+
+/* FONTS STYLE LUNA*/
+@font-face{
+    src: url(/fonts/Luna/Luna.ttf);
+    font-family: Luna;
+}
+/* FONTS STYLE OpenSans*/
+@font-face{
+    src: url(/fonts/OpenSans/OpenSans-Regular.ttf);
+    font-family: OpenSans;
+}
+
+/*
+====================================================================================
+                               CONTENIDO PRINCIPAL                                 
+====================================================================================
+*/
+/* BODY */
+body{
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+/* MAIN */
+main{
+    display: grid;
+    grid-template:repeat(100,1fr)/repeat(100,1fr);
+    height: 1600px;
+}
+
+/* APLICACION A TODO EL CONTENIDO DEL MAIN */
+main *{
+    -webkit-transition-duration: 0.5s; /* Safari */
+    transition-duration: 0.5s;
+}
+/*
+====================================================================================
+                                    MENU LATERAL                   
+====================================================================================
+*/
+
+/* CONTENEDOR MENU TOTAL */
+.menu-container-main{
+    grid-column: 1 / 35;
+    grid-row: 1 / 75;
+    background: rgba(255, 255, 255, 0);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+/* DIV PARA ICONO */
+.opc-img{
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    background: #ffffff00;
+}
+
+/* ICONO */
+.opc-img > img{
+    height: auto;
+    width: 40%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* HOVER ICONO */
+.opc-img > img:hover{
+    height: auto;
+    width: 40%;
+    -webkit-filter: none;
+    filter: none;
+}
+
+/* DIV OPCIONES MENU */
+.opc-text{
+    background: rgba(255, 255, 255, 0);
+}
+
+/* ESTILOS AL TEXTO DE LAS OPCIONES */
+.opc-text> a{
+    font-family: "Luna";
+    font-size: 3vw;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+/* HOVER DE LAS ETIQUETAS a */
+.opc-text> a:hover{
+    text-decoration: underline;
+    color: #000000;
+}
+
+
+/*
+====================================================================================
+                                        FOOTER                  
+====================================================================================
+*/
+/* FOOTER CONTENEDOR PRINCIPAL */
+.footer-container-main{
+    grid-column: 1/-1;
+    grid-row: 75/-1;
+    background: #ffffff00;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5fr 1fr;
+    grid-gap: 3px 0px;
+    font-family: "OpenSans";
+}
+
+
+/*
+------------------------------------
+        CONTENEDOR DE ARRIBA                  
+------------------------------------
+*/
+/*FOOTER SUB CONTENEDOR ARRIBA*/
+.footer-container-main-sub-start{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    background: #423e3e;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+}
+
+/*SUSCRIBETE*/
+.footer-container-main-sub-start-subscribe{
+    grid-column: 1/2;
+    grid-row: 1/1;
+    background: #ffffff00;
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-rows: 2fr 2fr 1fr 4fr 2fr;
+    grid-gap: 10px;
+    
+}
+
+/*TITULO DE SUSCRIBIRSE*/
+.footer-container-main-sub-start-subscribe > h1{
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*SUSCRIBETE > INGRESA EMAIL*/
+.footer-container-main-sub-start-subscribe-enter-email{
+    grid-column: 2/-1;
+    grid-row: 4/5;
+    background: #ffffff00;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*INPUT CORREO*/
+.footer-container-main-sub-start-subscribe-enter-email> input{
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    margin: 0;
+    padding: 0;
+    font-size: 2vw;
+}
+
+/*BOTON SUSCRIBIRSE*/
+.footer-container-main-sub-start-subscribe-enter-email> button{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0;
+    padding: 0;
+    font-size: 2vw;
+}
+
+/*DIRECCION*/
+.footer-container-main-sub-start-direction{
+    grid-column: 2/3;
+    grid-row: 1/1;
+    background: #ffffff00;
+    display: grid;
+    grid-template-columns: 1fr 20fr;
+    grid-template-rows: 2fr 2fr 1fr 4fr 2fr;
+    grid-gap: 10px;
+}
+
+/*TITULO DE DIRECCION*/
+.footer-container-main-sub-start-direction> h1{
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*DIRECCION CONTENEDOR INFORMACION*/
+.footer-container-main-sub-start-direction-information{
+    grid-column: 2/-1;
+    grid-row: 4/5;
+    background: rgba(255, 255, 255, 0);
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*CONTENEDOR DE IMAGENES*/
+.footer-container-main-sub-start-direction-information-icon{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    background: #ffffff00;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+/*IMAGEN DIRECCION*/
+.footer-container-main-sub-start-direction-information .direccion-png{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: auto;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+/*IMAGEN TELEFONO*/
+.footer-container-main-sub-start-direction-information .telefono-png{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    height: auto;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+/*IMAGEN CORREO*/
+.footer-container-main-sub-start-direction-information .correo-png{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    height: auto;
+    width: 70%;
+    margin: 0;
+    padding: 0;;
+}
+
+/*CONTENEDOR DE TEXTOS*/
+ .footer-container-main-sub-start-direction-information-text{
+    grid-column: 2/3;
+    grid-row: 1/4;
+    background: #ffffff00;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*TEXTO DIRECCION*/
+.footer-container-main-sub-start-direction-information .direccion-texto{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/*TEXTO TELEFONO*/
+.footer-container-main-sub-start-direction-information .telefono-texto{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+/*TEXTO CORREO*/
+.footer-container-main-sub-start-direction-information .correo-texto{
+    grid-column: 1/2;
+    grid-row: 3/4;
+    font-size: 1.3vw;
+    margin: 0;
+    padding: 0;
+    color: white;
+} 
+
+
+/*ACERCA DE*/
+.footer-container-main-sub-start-aboutUs{
+    grid-column: 3/4;
+    grid-row: 1/1;
+    background: rgba(255, 255, 255, 0);
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+    grid-template-rows: 2fr 2fr 1fr 4fr 2fr;
+    grid-gap: 10px;
+}
+
+/*TITULO DE ACERCA DE NOSOTROS*/
+.footer-container-main-sub-start-aboutUs> h1{
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+    color: #000000;
+    text-decoration: none;
+}
+
+/*CONTENEDOR ACERCA DE NOSOTROS PARRAFO*/
+.footer-container-main-sub-start-aboutUs-paragraph{
+    grid-column: 1/1;
+    grid-row: 4/5;
+    background: rgba(255, 255, 255, 0);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/*PARRAFO DEL CONTAINER ACERDE DE NOSOTROS*/
+.footer-container-main-sub-start-aboutUs-paragraph > p {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    font-size: 0.8vw;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/*
+------------------------------------
+        CONTENEDOR DE ABAJO                  
+------------------------------------
+*/
+/*FOOTER SUB CONTENEDOR ABAJO*/
+.footer-container-main-sub-end{
+    grid-column: 1/-1;
+    grid-row: 2/-1;
+    background: #000000;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    grid-template-rows: 1fr;
+}
+
+/*DERECHOS RESERVADOS*/
+.footer-container-main-sub-end-reservation-straight{
+    grid-column: 1/4;
+    grid-row: 1/-1;
+    background: #ffffff00;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    align-content: center;
+    align-items: center;
+}
+
+/*COPYRIGHT*/
+.footer-container-main-sub-end-reservation-straight > p{
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    font-size: 2vw;
+    align-content: flex-start;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+/*ICONOS REDES SOCIALES*/
+.footer-container-main-sub-end-icons-redes{
+    grid-column: 4/-1;
+    grid-row: 1/-1;
+    background: #ffffff00;
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    align-items: center;
+    justify-items: center;
+}
+
+/*ICONO FACEBOK*/
+.footer-container-main-sub-end-icons-redes-facebook{
+    grid-column: 1/2;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 7px 0px 7px 0px;
+    height: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/*HOVER ICONO FACEBOK*/
+.footer-container-main-sub-end-icons-redes-facebook:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO GOOGLE PLUS*/
+.footer-container-main-sub-end-icons-redes-Googleplus{
+    grid-column: 2/3;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 7px 0px 7px 0px;
+    height: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/*HOVER ICONO GOOGLE PLUS*/
+.footer-container-main-sub-end-icons-redes-Googleplus:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO INSTRAGRAM*/
+.footer-container-main-sub-end-icons-redes-instagram{
+    grid-column: 3/4;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 7px 0px 7px 0px;
+    height: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/*HOVER ICONO INSTAGRAM*/
+.footer-container-main-sub-end-icons-redes-instagram:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO LINKEDIN*/
+.footer-container-main-sub-end-icons-redes-linkedin{
+    grid-column: 4/5;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 7px 0px 7px 0px;
+    height: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/*HOVER ICONO LINKEDIN*/
+.footer-container-main-sub-end-icons-redes-linkedin:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO PINTERIST*/
+.footer-container-main-sub-end-icons-redes-pinterest{
+    grid-column: 5/6;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 7px 0px 7px 0px;
+    height: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/*HOVER ICONO PINTERIST*/
+.footer-container-main-sub-end-icons-redes-pinterest:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO ICONO SKYPE*/
+.footer-container-main-sub-end-icons-redes-skype{
+    grid-column: 6/7;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 7px 0px 7px 0px;
+    height: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/*HOVER ICONO SKYPE*/
+.footer-container-main-sub-end-icons-redes-skype:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO TWITTER*/
+.footer-container-main-sub-end-icons-redes-twitter{
+    grid-column: 7/8;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 7px 0px 7px 0px;
+    height: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/*HOVER ICONO TWITTER*/
+.footer-container-main-sub-end-icons-redes-twitter:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO WHATSAPP*/
+.footer-container-main-sub-end-icons-redes-whatsapp{
+    grid-column: 8/9;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 7px 0px 7px 0px;
+    height: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+/*HOVER ICONO WHATSAPP*/
+.footer-container-main-sub-end-icons-redes-whatsapp:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
+
+/*ICONO YOUTUBE*/
+.footer-container-main-sub-end-icons-redes-youtube{
+    grid-column: 9/10;
+    grid-row: 1/-1;
+    margin: 0;
+    padding: 7px 0px 7px 0px;
+    height: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    
+}
+
+/*HOVER ICONO YOUTUBE*/
+.footer-container-main-sub-end-icons-redes-youtube:hover{
+    -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
+}
