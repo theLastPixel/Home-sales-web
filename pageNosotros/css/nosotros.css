@@ -1,0 +1,90 @@
+/*
+====================================================================================
+                               CONTENIDO PRINCIPAL                                 
+====================================================================================
+*/
+/* BODY */
+body{
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+
+
+/*
+====================================================================================
+                                    BACKGROUDN                                
+====================================================================================
+*/
+.background{
+    z-index: -1;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: url("../images/background/12.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+
+/*
+====================================================================================
+                                        ARTICLE                                
+====================================================================================
+*/
+.article-container-main{
+    grid-column: 33/95;
+    grid-row: 3/65;
+    background: #00000000;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 3fr;
+    grid-gap: 20px;
+    font-family: "OpenSans";
+}
+
+.article-container-main-sub-1{
+    grid-column: 1/1;
+    grid-row: 1/2;
+    background: #000000ad;
+    margin: 0;
+    padding: 0px 10px;
+    color: white;
+    text-align: justify;
+}
+
+.article-container-main-sub-1:hover{
+    background: #000000dc;
+}
+
+.article-container-main-sub-2{
+    grid-column: 1/1;
+    grid-row: 2/3;
+    background: #000000ad;
+    margin: 0;
+    padding: 0px 10px;
+    color: white;
+    text-align: justify;
+}
+
+.article-container-main-sub-2:hover{
+    background: #000000dc;
+}
+
+.article-container-main-sub-3{
+    grid-column: 1/1;
+    grid-row: 3/4;
+    background: #000000ad;
+    margin: 0;
+    padding: 0px 10px;
+    color: white;
+    text-align: justify;
+}
+
+.article-container-main-sub-3:hover{
+    background: #000000dc;
+}
